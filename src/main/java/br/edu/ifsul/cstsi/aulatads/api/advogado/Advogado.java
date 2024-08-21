@@ -1,7 +1,7 @@
 package br.edu.ifsul.cstsi.aulatads.api.advogado;
 
 import br.edu.ifsul.cstsi.aulatads.api.assume.Assume;
-import br.edu.ifsul.cstsi.aulatads.api.custa.Custa;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
