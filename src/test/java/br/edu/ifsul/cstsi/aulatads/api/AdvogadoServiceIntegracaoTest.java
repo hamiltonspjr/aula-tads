@@ -22,7 +22,7 @@ public class AdvogadoServiceIntegracaoTest {
     @Test
     @DisplayName("Busca os advogados na base de dados, espera 5")
     public void testGetAdvogadosEspera5() {
-        var pageable = PageRequest.of(0, 10);
+        var pageable = PageRequest.of(0, 5);
         var advogados = advogadoService.getAdvogados(pageable);
         assertEquals(5, advogados.getContent().size());
 

@@ -25,7 +25,7 @@ public class AdvogadoController {
     private AdvogadoService service;
 
     @GetMapping
-    public ResponseEntity<Page<AdvogadoDTOResponse>> selectAll(@PageableDefault(size = 50, sort = "nome")Pageable paginacao) {
+    public ResponseEntity<Page<AdvogadoDTOResponse>> selectAll(@PageableDefault(size = 5, sort = "nome")Pageable paginacao) {
         return ResponseEntity.ok(service.getAdvogados(paginacao).map(AdvogadoDTOResponse::new));
     }
 
